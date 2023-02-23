@@ -6,9 +6,14 @@ Console.Write("Введите число А ");
 int firstNumber = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число B ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
-int pow = 1;
-for (int i = 0; i < secondNumber; i++)
+int Pow (int a,int b)
 {
-    pow=pow*firstNumber;
+    int pow = 1;
+    for (int i = 0; i < secondNumber; i++)
+    {
+        pow=pow*firstNumber;
+    }
+    return pow;
 }
-Console.WriteLine($"Число А в степени B = {pow}");
+
+Console.WriteLine($"Число {firstNumber} в степени {secondNumber} = {Pow(firstNumber,secondNumber)}");
